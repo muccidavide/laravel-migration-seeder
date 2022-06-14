@@ -12183,6 +12183,7 @@ fieldset:disabled .btn {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  min-width: 200px;
 }
 
 .card_travel .card_details ul {
