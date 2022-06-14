@@ -1,2 +1,27 @@
 
 @use 'bootstrap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card_travel{
+    
+    .card_img{
+    
+        img{
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+    
+    }
+
+    .card_details{
+        ul{
+            padding: 1rem;
+            list-style-type: none;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Travel;
+use App\Models\Travel;
 use Illuminate\Http\Request;
 
 class TravelController extends Controller
@@ -14,28 +14,8 @@ class TravelController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        $travels = Travel::all();
+        return view('welcome', compact('travels'));
     }
 
     /**
@@ -49,37 +29,6 @@ class TravelController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Travel  $travel
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Travel $travel)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Travel  $travel
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Travel $travel)
-    {
-        //
-    }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Travel  $travel
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Travel $travel)
-    {
-        //
-    }
 }
