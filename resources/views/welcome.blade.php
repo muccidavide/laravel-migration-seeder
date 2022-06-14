@@ -6,15 +6,16 @@
     <div class="row">
         @forelse($travels as $travel)
         <div class="col">
+
             <div class="card_travel">
-                <div class="card_title text-center">
-                    <h2>{{ $travel->travel_title}}</h2>
-                </div>
-
-                <div class="card_img">
-                    <img class="img-fluid" src="{{ $travel->image }}" alt="">
-                </div>
-
+                <a class="text-decoration-none text-black" href="#">
+                    <div class="card_title text-center">
+                        <h2>{{ $travel->travel_title}}</h2>
+                    </div>
+                    <div class="card_img">
+                        <img class="img-fluid" src="{{ $travel->image }}" alt="">
+                    </div>
+                </a>
                 <div class="card_details">
 
                     <ul>
@@ -32,7 +33,7 @@
                             <strong>Data di partenza: </strong>{{ DateTime::createFromFormat('Y-m-d H:i:s', $travel->departure_date)->format('M d Y H:i') }}
                         </li>
                         <li>
-                            <strong>Aeroporto di partenza: </strong>{{ $travel->departure_aeroport}}
+                            <strong>Aeroporto di partenza: </strong>{{ $travel->departure_airport}}
                         </li>
                         <li>
                             <strong>Paese Ritorno: </strong>{{ $travel->arrival_country }}
@@ -41,13 +42,14 @@
                             <strong>Data Ritorno: </strong>{{DateTime::createFromFormat('Y-m-d H:i:s', $travel->arrival_date)->format('M d Y H:i') }}
                         </li>
                         <li>
-                            <strong>Aeroporto Ritorno: </strong>{{ $travel->arrival_aeroport}}
+                            <strong>Aeroporto Ritorno: </strong>{{ $travel->arrival_airport}}
                         </li>
 
                     </ul>
 
                 </div>
             </div>
+
         </div>
         @empty
         <h2>

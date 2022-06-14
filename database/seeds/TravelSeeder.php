@@ -17,9 +17,9 @@ class TravelSeeder extends Seeder
                 'price'=>1200,
                 'image'=>'https://www.lufthansa.com/content/dam/lh/images/offers/destination/mle-square.jpg',
                 'traveler_number'=> 1,
-                'departure_aeroport'=>'Aeroport di Malpensa - Milan',
+                'departure_airport'=>'Airport Malpensa - Milan',
                 'departure_country'=>'Italy',
-                'arrival_aeroport'=>'Aeroport Velana - Male',
+                'arrival_airport'=>'Airport Velana - Male',
                 'arrival_country'=>'Maldives',
                 'departure_date'=>'2022-8-4 15:00:00',
                 'arrival_date'=>'2022-8-24 10:30:00',
@@ -36,9 +36,9 @@ class TravelSeeder extends Seeder
                 'price'=>800,
                 'image'=>'https://images.placesonline.com/photos/424012307180120_Betancuria_1088733455.jpg',
                 'traveler_number'=> 2,
-                'departure_aeroport'=>'Aeroport Malpensa - Milan',
+                'departure_airport'=>'Airport Malpensa - Milan',
                 'departure_country'=>'Italy',
-                'arrival_aeroport'=>'Aeroport Puerto del Rosario',
+                'arrival_airport'=>'Airport Puerto del Rosario',
                 'arrival_country'=>'Spain',
                 'departure_date'=>'2022-8-2 8:00:00',
                 'arrival_date'=>'2022-8-18 10:30:00',
@@ -55,9 +55,9 @@ class TravelSeeder extends Seeder
                 'price'=>400,
                 'image'=>'https://upload.wikimedia.org/wikipedia/commons/8/8e/Amsterdam_Dam_2008.jpg',
                 'traveler_number'=> 2,
-                'departure_aeroport'=>'Aeroport Malpensa - Milan',
+                'departure_airport'=>'Airport Malpensa - Milan',
                 'departure_country'=>'Italy',
-                'arrival_aeroport'=>'Aeroport Schipol',
+                'arrival_airport'=>'Airport Schipol',
                 'arrival_country'=>'Holland',
                 'departure_date'=>'2022-8-2 9:00:00',
                 'arrival_date'=>'2022-8-18 23:30:00',
@@ -77,9 +77,9 @@ class TravelSeeder extends Seeder
             $newTravel->price = $travel['price'];
             $newTravel->image = $travel['image'];
             $newTravel->traveler_number = $travel['traveler_number'];
-            $newTravel->departure_aeroport = $travel['departure_aeroport'];
+            $newTravel->departure_airport = $travel['departure_airport'];
             $newTravel->departure_country = $travel['departure_country'];
-            $newTravel->arrival_aeroport = $travel['arrival_aeroport'];
+            $newTravel->arrival_airport = $travel['arrival_airport'];
             $newTravel->arrival_country = $travel['arrival_country'];
             $newTravel->departure_date = $travel['departure_date'];
             $newTravel->arrival_date = $travel['arrival_date'];

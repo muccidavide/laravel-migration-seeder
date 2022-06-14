@@ -19,9 +19,9 @@ class CreateTravelTable extends Migration
             $table->decimal('price', 6 , 2, true); 
             $table->string('image');
             $table->tinyInteger('traveler_number')->unsigned()->default(1);
-            $table->string('departure_aeroport',100);
+            $table->string('departure_airport',100);
             $table->string('departure_country',100);
-            $table->string('arrival_aeroport',100);
+            $table->string('arrival_airport',100);
             $table->string('arrival_country',100);
             $table->dateTimeTz('departure_date', 0);
             $table->dateTimeTz('arrival_date', 0);

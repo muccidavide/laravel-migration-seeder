@@ -14,7 +14,7 @@ class TravelController extends Controller
      */
     public function index()
     {
-        $travels = Travel::all();
+        $travels = Travel::limit(3)->get();
         return view('welcome', compact('travels'));
     }
 
