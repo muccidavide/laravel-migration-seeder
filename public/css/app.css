@@ -12179,14 +12179,14 @@ fieldset:disabled .btn {
   box-sizing: border-box;
 }
 
-.card_travel .card_img img {
+.card_img img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 200px;
 }
 
-.card_travel .card_details ul {
+.card_details ul {
   padding: 1rem;
   list-style-type: none;
 }

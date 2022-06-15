@@ -20,12 +20,4 @@
             </div>
         </div>
     </nav>
-
-
-
-
-
-    <div class="title text-center text-uppercase my-3">
-        <a class="text-black text-decoration-none" href="{{ route('home') }}"><h1>Vuelve Diferente</h1></a>
-    </div>
 </header>
